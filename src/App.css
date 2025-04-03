@@ -1,29 +1,12 @@
 @import "tailwindcss";
+@import "./styles/theme.css";
 
 body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
 
-/* Themed wrapper */
-.App.light {
-  --bg-color: #fff;
-  --text-color: #111;
-  --link-color: #0645ad;
-  --link-hover: #0b0080;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
-
-.App.dark {
-  --bg-color: #121212;
-  --text-color: #eee;
-  --link-color: #4da6ff;
-  --link-hover: #8abeff;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
-
+/* Updated global styles */
 a {
   color: var(--link-color);
   text-decoration: none;

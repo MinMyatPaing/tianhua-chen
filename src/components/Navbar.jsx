@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-function NavBar({ darkMode, toggleTheme }) {
+function NavBar({ darkMode, onThemeChange }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
@@ -14,31 +14,37 @@ function NavBar({ darkMode, toggleTheme }) {
         <div className="hidden md:flex gap-6 items-center">
           <NavLink
             to="/"
-            className={({ isActive }) => (isActive ? "underline" : "")}
+            className={({ isActive }) => (isActive ? "!text-blue-400" : "")}
           >
             About
           </NavLink>
           <NavLink
             to="/teaching"
-            className={({ isActive }) => (isActive ? "underline" : "")}
+            className={({ isActive }) => (isActive ? "!text-blue-400" : "")}
           >
             Teaching
           </NavLink>
           <NavLink
+            to="/research"
+            className={({ isActive }) => (isActive ? "!text-blue-400" : "")}
+          >
+            Research
+          </NavLink>
+          <NavLink
             to="/publications"
-            className={({ isActive }) => (isActive ? "underline" : "")}
+            className={({ isActive }) => (isActive ? "!text-blue-400" : "")}
           >
             Publications
           </NavLink>
           <NavLink
             to="/contact"
-            className={({ isActive }) => (isActive ? "underline" : "")}
+            className={({ isActive }) => (isActive ? "!text-blue-400" : "")}
           >
             Contact
           </NavLink>
           <button
-            onClick={toggleTheme}
-            className="bg-white text-[#003976] px-3 py-1 rounded font-medium hover:bg-gray-200"
+            onClick={onThemeChange}
+            className="bg-white text-[#003976] px-3 py-1 rounded font-medium hover:bg-gray-200 cursor-pointer"
           >
             {darkMode ? "Light 🌞" : "Dark 🌙"}
           </button>
@@ -74,7 +80,7 @@ function NavBar({ darkMode, toggleTheme }) {
             Contact
           </NavLink>
           <button
-            onClick={toggleTheme}
+            onClick={onThemeChange}
             className="block mt-2 bg-white text-[#003976] px-3 py-1 rounded w-full"
           >
             {darkMode ? "Light 🌞" : "Dark 🌙"}

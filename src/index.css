@@ -1,5 +1,6 @@
 /* Global styles */
 
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -37,7 +38,9 @@ main {
 section {
   margin: 2rem 0;
 }
-section h1, section h2, section h3 {
+section h1,
+section h2,
+section h3 {
   margin-bottom: 0.5rem;
 }
 section p {
