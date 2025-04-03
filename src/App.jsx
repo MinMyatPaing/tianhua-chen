@@ -1,10 +1,14 @@
+// src/App.jsx
+// Main application component that sets up routing and theme toggling.
+
 import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/Navbar";
 import About from "./pages/About";
-import Research from "./pages/Research";
 import Publications from "./pages/Publications";
 import Contact from "./pages/Contact";
+import PublicationDetail from "./pages/PublicationDetails";
+import Teaching from "./pages/Teaching";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -21,8 +25,9 @@ function App() {
       <main className="px-4 py-6 max-w-5xl mx-auto">
         <Routes>
           <Route path="/" element={<About />} />
-          <Route path="/research" element={<Research />} />
-          <Route path="/publications" element={<Publications />} />
+          <Route path="/teaching" element={<Teaching />} />
+          <Route path="/publications/:slug" element={<PublicationDetail />} />
+          <Route path="/publications"  element={<Publications />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>

@@ -19,10 +19,10 @@ function NavBar({ darkMode, toggleTheme }) {
             About
           </NavLink>
           <NavLink
-            to="/research"
+            to="/teaching"
             className={({ isActive }) => (isActive ? "underline" : "")}
           >
-            Research
+            Teaching
           </NavLink>
           <NavLink
             to="/publications"

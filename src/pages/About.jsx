@@ -1,36 +1,57 @@
-import React from "react";
-import profilePic from "../assets/profile.webp";
+// src/pages/About.jsx
+// Displays Dr. Tianhua Chen's biography, research interests, and professional affiliations.
+
+import React from 'react';
+import profileImg from '../assets/profile.webp';
 
 function About() {
   return (
-    <div className="flex flex-col md:flex-row items-center gap-8 py-8">
-      <img
-        src={profilePic}
-        alt="Tianhua Chen"
-        className="w-40 h-40 rounded-full shadow-md"
-      />
-      <div>
-        <h1 className="text-3xl font-bold mb-2">Dr. Tianhua Chen</h1>
-        <h2 className="text-xl font-semibold text-[#003976] mb-4">
-          Reader in Artificial Intelligence
-        </h2>
-        <p className="italic mb-4">
-          Department of Computer Science, School of Computing and Engineering
-          <br />
-          University of Huddersfield
-        </p>
-        <p>
-          Tianhua Chen received his Ph.D. in Computational Intelligence from
-          Aberystwyth University in 2017. He is now a Reader (Associate
-          Professor) in Artificial Intelligence at the University of
-          Huddersfield. He leads the MSc Artificial Intelligence programs and
-          the AI for Health and Wellbeing research team. His research focuses on
-          probabilistic machine learning, sequence modelling, and affective
-          computing applied to wellbeing and mental health. He has published
-          over 60 peer-reviewed papers including a spotlight article in IEEE
-          Transactions on Fuzzy Systems.
-        </p>
+    <div className="py-8 px-4 max-w-4xl mx-auto">
+      <h1 className="text-3xl font-bold mb-6 text-[#003976]">About Dr. Tianhua Chen</h1>
+
+      {/* Profile Image */}
+      <div className="flex justify-center mb-6">
+        <img
+          src={profileImg} // Ensure the image is placed in the public directory or adjust the path accordingly
+          alt="Dr. Tianhua Chen"
+          className="w-48 h-48 rounded-full shadow-lg object-cover"
+        />
       </div>
+
+      {/* Biography Section */}
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4 text-[#003976]">Biography</h2>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Dr. Tianhua Chen received his Ph.D. in Computational Intelligence from Aberystwyth University, UK, in 2017. He then joined the University of Huddersfield as a Research Fellow and has since progressed to Lecturer, Senior Lecturer, and now Reader (equivalent to Associate Professor) in Artificial Intelligence. Dr. Chen leads the MSc Artificial Intelligence and MSc Applied Artificial Intelligence programs and heads the AI for Health and Wellbeing team within the Centre for Autonomous and Intelligent Systems.
+        </p>
+      </section>
+
+      {/* Research Interests Section */}
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4 text-[#003976]">Research Interests</h2>
+        <ul className="list-disc list-inside text-lg text-gray-700 leading-relaxed">
+          <li>Probabilistic Machine Learning</li>
+          <li>Sequence Modelling</li>
+          <li>Affective Computing</li>
+          <li>Applications of AI in Wellbeing and Mental Health</li>
+        </ul>
+        <p className="text-lg text-gray-700 leading-relaxed mt-4">
+          Dr. Chen has authored over 60 peer-reviewed papers in leading international journals and conferences. Notably, one of his lead-authored papers was selected as an IEEE Transactions on Fuzzy Systems Publication Spotlight Article by the IEEE Computational Intelligence Society.
+        </p>
+      </section>
+
+      {/* Professional Affiliations Section */}
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4 text-[#003976]">Professional Affiliations</h2>
+        <ul className="list-disc list-inside text-lg text-gray-700 leading-relaxed">
+          <li>Editorial Board Member of Elsevier and Springer journals</li>
+          <li>Member of the Centre for Planning, Autonomy and Representation of Knowledge</li>
+          <li>Member of the Centre of Artificial Intelligence for Mental Health</li>
+          <li>Member of the Centre for Climate Resilient Societies</li>
+          <li>Member of the Centre for Autonomous and Intelligent Systems</li>
+        </ul>
+      </section>
+
     </div>
   );
 }

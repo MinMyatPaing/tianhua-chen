@@ -1,18 +1,47 @@
-import React from "react";
+// src/pages/Contact.jsx
+import React from 'react';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGoogle } from 'react-icons/fa';
 
 function Contact() {
   return (
-    <div className="py-8">
-      <h1 className="text-2xl font-bold mb-6">Contact</h1>
-      <div className="space-y-4">
-        <p><strong>Email:</strong> <a href="mailto:t.chen@hud.ac.uk" className="text-blue-600 hover:underline">t.chen@hud.ac.uk</a></p>
-        <p><strong>Phone:</strong> +44 (0)1484 256242</p>
-        <p><strong>Office:</strong> Department of Computer Science, University of Huddersfield, HD1 3DH, UK</p>
-        <p><strong>Profiles:</strong> 
-          <a href="https://pure.hud.ac.uk/en/persons/tianhua-chen" className="text-blue-600 hover:underline ml-1" target="_blank">Pure</a> | 
-          <a href="https://scholar.google.com/citations?user=GXJE7FQAAAAJ" className="text-blue-600 hover:underline ml-1" target="_blank">Google Scholar</a>
-        </p>
-      </div>
+    <div className="py-8 px-4 max-w-4xl mx-auto">
+      <h1 className="text-3xl font-bold mb-6 text-[#003976]">Contact</h1>
+
+      {/* Contact Information Section */}
+      <section className="space-y-4">
+        <div className="flex items-center space-x-4">
+          <FaEnvelope className="text-[#003976] w-6 h-6" />
+          <a href="mailto:T.Chen@hud.ac.uk" className="text-lg text-gray-700 hover:text-[#003976]">
+            T.Chen@hud.ac.uk
+          </a>
+        </div>
+
+        <div className="flex items-center space-x-4">
+          <FaPhone className="text-[#003976] w-6 h-6" />
+          <span className="text-lg text-gray-700">+44 (0)1484 473586</span>
+        </div>
+
+        <div className="flex items-center space-x-4">
+          <FaMapMarkerAlt className="text-[#003976] w-6 h-6" />
+          <span className="text-lg text-gray-700">
+            Department of Computer Science, School of Computing and Engineering, University of Huddersfield, Queensgate, Huddersfield, HD1 3DH, UK
+          </span>
+        </div>
+
+        <div className="flex items-center space-x-4">
+          <FaLinkedin className="text-[#003976] w-6 h-6" />
+          <a href="https://uk.linkedin.com/in/tianhua-chen-1a083316b" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 hover:text-[#003976]">
+            LinkedIn Profile
+          </a>
+        </div>
+
+        <div className="flex items-center space-x-4">
+          <FaGoogle className="text-[#003976] w-6 h-6" />
+          <a href="https://scholar.google.co.uk/citations?hl=en&user=GXJE7FQAAAAJ" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 hover:text-[#003976]">
+            Google Scholar Profile
+          </a>
+        </div>
+      </section>
     </div>
   );
 }
