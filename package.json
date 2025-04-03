@@ -7,7 +7,11 @@
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
+<<<<<<< HEAD
     "deploy": "gh-pages -d dist",
+=======
+    "deploy": "gh-pages -d build",
+>>>>>>> c40d475 (change pull req)
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
