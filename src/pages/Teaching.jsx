@@ -1,3 +1,4 @@
+// This component renders the Teaching page, detailing courses and modules led or tutored by Dr. Tianhua Chen.
 // src/pages/Teaching.jsx
 // Provides details about Dr. Tianhua Chen's teaching contributions, including courses and modules.
 

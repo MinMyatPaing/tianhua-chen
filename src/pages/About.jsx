@@ -1,3 +1,4 @@
+// This component renders the About page, including Dr. Tianhua Chen's biography, research interests, and professional affiliations.
 import React from "react";
 import profileImg from "../assets/profile.webp";
 

@@ -1,3 +1,4 @@
+// This component renders the Publications page, listing selected publications with summaries and links.
 import React from "react";
 import { useLocation } from "react-router-dom";
 

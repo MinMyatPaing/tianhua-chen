@@ -1,3 +1,4 @@
+// This component renders the Research page, showcasing Dr. Tianhua Chen's research areas and projects.
 import React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 

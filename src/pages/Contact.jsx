@@ -1,3 +1,4 @@
+// This component renders the Contact page, providing contact details and links to professional profiles.
 import React from 'react';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGoogle } from 'react-icons/fa';
 
