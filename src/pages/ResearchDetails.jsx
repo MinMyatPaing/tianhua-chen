@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Bar, Line } from "react-chartjs-2";
-import Chart from "chart.js/auto";
 import StepCountMood from "../components/StepCountMoodGraph";
+import Chart from "chart.js/auto";
 
 import { images } from "../constants";
 

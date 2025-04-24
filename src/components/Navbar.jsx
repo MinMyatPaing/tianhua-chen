@@ -46,7 +46,7 @@ function NavBar({ darkMode, onThemeChange }) {
             onClick={onThemeChange}
             className="bg-white text-[#003976] px-3 py-1 rounded font-medium hover:bg-gray-200 cursor-pointer"
           >
-            {darkMode ? "Light 🌞" : "Dark 🌙"}
+            {darkMode ? "🌞" : "🌙"}
           </button>
         </div>
         <button onClick={toggleMenu} className="md:hidden text-2xl">
@@ -83,7 +83,7 @@ function NavBar({ darkMode, onThemeChange }) {
             onClick={onThemeChange}
             className="block mt-2 bg-white text-[#003976] px-3 py-1 rounded w-full"
           >
-            {darkMode ? "Light 🌞" : "Dark 🌙"}
+            {darkMode ? "🌞" : "🌙"}
           </button>
         </div>
       )}
